@@ -5,7 +5,7 @@ from aiogram.utils import executor
 import requests
 import io
 
-YOUR_BOT_TOKEN = ''
+YOUR_BOT_TOKEN = '6708257802:AAH9w014Bb5itMFvYCoEyu4oIsTyj0VaaP0'
 
 bot = Bot(token=YOUR_BOT_TOKEN)
 dp = Dispatcher(bot)

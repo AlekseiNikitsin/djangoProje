@@ -41,6 +41,11 @@ async def start(message: types.Message):
 async def handle_product_choice(message: types.Message):
     chosen_product = message.text
     await message.answer(f"Вы выбрали товар: {chosen_product}")
+@dp.message_handler(text='фото')
+async def cmd_start(message: types.Message):
+    await message.answer_photo(
+     photo='https://catherineasquithgallery.com/uploads/posts/2021-02/1614282221_80-p-chernii-fon-laika-98.jpg',
+       caption='фото из интернета')
 
 
 if __name__ == '__main__':
